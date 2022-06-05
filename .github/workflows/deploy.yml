@@ -12,6 +12,9 @@ jobs:
     - uses: actions/checkout@master
       with:
         submodules: recursive
+    - uses: szenius/set-timezone@v1.0
+      with:
+        timezoneLinux: "Africa/Johannesburg"
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.100' # SDK Version to use.
