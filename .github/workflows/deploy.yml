@@ -25,6 +25,6 @@ jobs:
       with:
           source-directory: 'output'
           destination-github-username: 'always-developing'
-          destination-repository-name: 'always-developing.github.io.github.io'
+          destination-repository-name: 'always-developing.github.io'
           user-email: jpseini@gmail.com
           target-branch: main
