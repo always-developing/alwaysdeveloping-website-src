@@ -1,0 +1,30 @@
+name: Deploy Site
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  schedule:
+    - cron: '30 3 * * 1,2,3,4,5'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        submodules: recursive
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.100' # SDK Version to use.
+    - run: dotnet run -c Release -- deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Pushes to another repository
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+          source-directory: 'output'
+          destination-github-username: 'always-developing'
+          destination-repository-name: 'always-developing.github.io.github.io'
+          user-email: jpseini@gmail.com
+          target-branch: main

@@ -1,0 +1,7 @@
+﻿DestinationPath: |
+  =>
+  {
+    var filepath = $"dailydrop/{Document.Source.Segments[Document.Source.Segments.Length - 4]}/{Document.Source.Segments[Document.Source.Segments.Length - 3]}/{Document.Source.Segments[Document.Source.Segments.Length - 2]}";
+
+    return Document.Destination.FileNameWithoutExtension == "index" ? $"{filepath}/{Document.Destination.FileNameWithoutExtension.ToString()}.html" : $"{filepath}/{Document.Destination.FileName}"; 
+  }

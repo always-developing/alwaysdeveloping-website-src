@@ -1,0 +1,38 @@
+
+@using Statiq.Html;
+@using Statiq.Web;
+
+@{
+    var topLevelHeadings = Document.GetDocumentList("Headings").Where(x => x.GetInt("Level") == 1).Any() ? Document.GetDocumentList("Headings").Where(x => x.GetInt("Level") == 1) :
+                Document.GetDocumentList("Headings").Where(x => x.GetInt("Level") == 2);
+
+    async Task PrintElementAndChildren(IDocument heading)
+    {
+        var headingId = heading.GetString("HeadingId");
+        <li><a href="#@headingId">@(await heading.GetContentStringAsync())</a></li>
+
+        var children = heading.GetChildren();
+        if (children.Any())
+        {
+            <ul>
+                @foreach (var child in children)
+                {
+                    await PrintElementAndChildren(child);
+                }
+            </ul>
+        }
+    }
+
+    if (topLevelHeadings.Any())
+    {
+        <div class="box sticky-top toc-block">
+            <h3 class="no-anchor">On This Page</h3>
+            <ul>
+                @foreach (var titleHeading in topLevelHeadings)
+                {
+                    await PrintElementAndChildren(titleHeading);
+                }
+            </ul>
+        </div>
+    }
+}

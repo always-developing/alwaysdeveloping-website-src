@@ -1,0 +1,13 @@
+@model IDocument
+
+<div class="post-header-category">
+    <a class="btn btn-primary btn-sm btn-default btn-home" href="\" role="button"><i class="fas fa-angle-double-left"></i> Home</a>
+    @if (Model.ContainsKey("categories"))
+    {
+        @foreach (string category in Model.Get<string[]>("categories"))
+        {
+            IDocument categoryPage = OutputPages.Get("categories.html").GetChildren().First(d => d.GetTitle() == category);
+            <a class="btn btn-primary btn-sm category-btn" href="@Context.GetLink(categoryPage)" role="button">@category</a>
+        }
+    }
+</div>

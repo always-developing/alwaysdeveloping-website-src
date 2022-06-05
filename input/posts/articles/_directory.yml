@@ -1,0 +1,5 @@
+﻿DestinationPath: |
+  =>
+  {
+    return Document.Destination.FileNameWithoutExtension == "index" ? $"p/{Document.Source.Segments[Document.Source.Segments.Length - 2]}/{Document.Destination.FileNameWithoutExtension.ToString()}.html" : $"p/{Document.Source.Segments[Document.Source.Segments.Length - 2]}/{Document.Destination.FileName}"; 
+  }

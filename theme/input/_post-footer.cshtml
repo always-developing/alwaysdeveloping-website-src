@@ -1,0 +1,12 @@
+@model IDocument
+
+<div>
+    @if (Model.ContainsKey("tags"))
+    {
+        @foreach (string tag in Model.Get<string[]>("tags"))
+        {
+            IDocument tagPage = OutputPages.Get("tags.html").GetChildren().First(d => d.GetTitle() == tag);
+            <a role="button" href="@Context.GetLink(tagPage)" class="badge badge-light"> @tag</a>
+        }
+    }
+</div>

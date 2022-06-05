@@ -1,0 +1,227 @@
+// Styling for the post page
+.post-preview {
+  > a {
+    color: $gray-900;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+    }
+    > .post-title {
+      font-size: 30px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    > .post-subtitle {
+      font-weight: 300;
+      margin: 0 0 10px;
+    }
+  }
+  > .post-meta {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: $gray-600;
+    > a {
+      text-decoration: none;
+      color: $gray-900;
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    > a {
+      > .post-title {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.post-preview {
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    border-radius: 20px;
+
+    > .post-title {
+        font-size: 24px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        > a {
+            color: rgb(220, 220, 170);
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                color: #3399ff;
+            }
+        }
+    }
+
+    > .post-subtitle {
+        font-size: 18px;
+    }
+
+    > .post-buffer {
+        padding-bottom: 10px;
+    }
+
+    .post-read-more {
+        font-size: 16px;
+
+        > a {
+            color: #fff;
+            text-decoration: underline;
+
+            &:focus,
+            &:hover {
+                color: #3399ff;
+            }
+        }
+    }
+
+    > .post-meta {
+        font-size: 16px;
+        margin-bottom: 0;
+        color: #777777;
+    }
+}
+
+.post-category {
+    padding-top: 10px;
+
+    > .category-btn {
+        border-radius: 5px;
+        text-transform: unset !important;
+        background-color: rgb(78, 201, 176);
+        border-color: rgb(78, 201, 176);
+    }
+
+    > .btn-home {
+        margin-right: 20px;
+    }
+}
+
+.post-header-category {
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    > .category-btn {
+        border-radius: 5px;
+        text-transform: unset !important;
+        background-color: rgb(78, 201, 176);
+        border-color: rgb(78, 201, 176);
+    }
+
+    > .btn-home {
+        margin-right: 20px;
+    }
+}
+
+.post-with-toc {
+    font-size: 16px;
+}
+
+.toc-block {
+    h3 {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    background-color: rgb(51, 51, 51);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.post-block {
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    border-radius: 20px;
+
+    hr {
+        background-color: #fff;
+        height: 1px;
+        border: none;
+        width: 100px;
+        margin: 40px auto;
+    }
+
+    h1:before {
+        background-color: #fff;
+        padding: 0 3px;
+        content: " ";
+        position: relative;
+        left: -10px;
+    }
+
+    h2:before {
+        background-color: #fff;
+        padding: 0 2px;
+        content: " ";
+        position: relative;
+        left: -10px;
+    }
+
+    h3:before {
+        background-color: #fff;
+        padding: 0 1px;
+        content: " ";
+        position: relative;
+        left: -10px;
+    }
+
+    * img {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-width: 1px;
+        border-color: #717171;
+        border-style: solid;
+    }
+
+    th {
+        border-width: 1px;
+        border-color: #717171;
+        border-style: solid;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    td {
+        border-width: 1px;
+        border-color: #717171;
+        border-style: solid;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.sticky-top {
+    top: 80px;
+}
+
+.post-buffer-small {
+    height: 10px;
+}
+
+.horizontal-rule {
+    background-color: #fff;
+    height: 1px;
+    border: none;
+}

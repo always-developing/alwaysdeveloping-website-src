@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition=" '$(Configuration)' == 'Debug'" />
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="Statiq.Web" Version="1.0.0-beta.33" />
+      </ItemGroup>      
+    </Otherwise>
+  </Choose>
+
+  <ItemGroup>
+    <None Remove="input\about.cshtml" />
+    <None Remove="input\about.cshtml" />
+    <None Remove="input\projects.md" />
+    <None Remove="input\projects.md" />
+    <None Remove="input\speaking.md" />
+    <None Remove="input\speaking.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Statiq.Web" Version="1.0.0-beta.47" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="theme\input\favicon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
