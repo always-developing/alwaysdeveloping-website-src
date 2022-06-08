@@ -1,7 +1,7 @@
 ---
 title: "Lambda vs local function performance"
 lead: "Exploring the performance of a lambda function vs a local function"
-Published1: "06/27/2022 01:00:00+0200"
+Published: "06/27/2022 01:00:00+0200"
 slug: "27-lambda-vs-local"
 draft: false
 toc: true
