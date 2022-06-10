@@ -22,7 +22,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Pushes to another repository
-      uses: cpina/github-action-push-to-another-repository@b5ac509f7b2dc62ec43608515039593fae596689
+      uses: cpina/github-action-push-to-another-repository@v1.4.2
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
