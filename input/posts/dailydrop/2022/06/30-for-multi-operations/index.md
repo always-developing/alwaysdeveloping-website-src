@@ -1,7 +1,7 @@
 ---
 title: "Multiple statements in a for loop"
 lead: "A for loop can contain multiple statements in the iterator section"
-Published1: "06/30/2022 01:00:00+0200"
+Published: "06/30/2022 01:00:00+0200"
 slug: "30-for-multiple-operations"
 draft: false
 toc: true
