@@ -10,8 +10,8 @@ categories:
 tags:
     - c#
     - .net
-    - forlop
     - for
+    - loop
     - iteration
 
 ---
