@@ -11,11 +11,11 @@ tags:
     - c#
     - .net
     - dailydrop
-    - IOptions
-    - IOptionsSnapshot
-    - IOptionsMonitor
-    - OptionsPattern
-    - Configuration
+    - ioptions
+    - ioptionssnapshot
+    - ioptionsmonitor
+    - optionspattern
+    - configuration
 ---
 
 ## Daily Knowledge Drop
