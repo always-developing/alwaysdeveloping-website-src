@@ -1,7 +1,7 @@
 ---
 title: "T-SQL enhancements in SQL Server 2022"
 lead: "Exploring some of the more useful T-SQL enhancement coming with SQL Server 2022"
-Published1: "07/06/2022 01:00:00+0200"
+Published: "07/06/2022 01:00:00+0200"
 slug: "06-sql-2022-enhancements"
 draft: false
 toc: true
