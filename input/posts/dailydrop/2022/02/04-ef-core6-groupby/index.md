@@ -10,14 +10,12 @@ categories:
 tags:
     - c#
     - .net
-    - dailydrop
     - efcore
     - efcore6
     - ef
     - entityframeworkcore
     - groupby
     - .net6
-    
 ---
 
 ## Daily Knowledge Drop

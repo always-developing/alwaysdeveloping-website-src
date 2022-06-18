@@ -10,7 +10,6 @@ categories:
 tags:
     - c#
     - .net
-    - dailydrop
     - optional
     - attribute
     - parameters

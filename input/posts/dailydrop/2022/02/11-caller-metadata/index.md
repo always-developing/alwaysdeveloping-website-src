@@ -10,7 +10,6 @@ categories:
 tags:
     - c#
     - .net
-    - dailydrop
     - metadata
     - call stack
     - attribute

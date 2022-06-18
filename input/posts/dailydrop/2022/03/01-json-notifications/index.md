@@ -10,7 +10,6 @@ categories:
 tags:
     - c#
     - .net
-    - dailydrop
     - json
     - system.text.json
     - .net6

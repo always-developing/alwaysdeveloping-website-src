@@ -12,7 +12,6 @@ tags:
     - .net
     - ILogger
     - logging
-    - dailydrop
 ---
 
 ## Daily Knowledge Drop
