@@ -1,7 +1,7 @@
 ---
 title: "For loop lowering in C#"
 lead: "Discovering how C# lowers for a loop to a while loop"
-Published1: "07/08/2022 01:00:00+0200"
+Published: "07/08/2022 01:00:00+0200"
 slug: "08-lowing-for-loop"
 draft: false
 toc: true
