@@ -1,7 +1,7 @@
 ---
 title: "Unit testing a protected method"
 lead: "How to unit test a protected method on a class"
-Published1: "07/15/2022 01:00:00+0200"
+Published: "07/15/2022 01:00:00+0200"
 slug: "15-testing-protected"
 draft: false
 toc: true
@@ -18,7 +18,7 @@ tags:
 
 ## Daily Knowledge Drop
 
-To unit test a `protected` method of a class, inheritence and a public method wrapper can be used.
+To unit test a `protected` method of a class, inheritance and a public method wrapper can be used.
 
 Consider a class, (called, for example, _CustomClass_) with a protected member - a _test_ class (_TestCustomClass_) can be created which inherits from _CustomClass_ Then a public wrapper method created on _TestCustomClass_ can be created, which in turn invokes the `protected` method on _CustomClass_.
 
