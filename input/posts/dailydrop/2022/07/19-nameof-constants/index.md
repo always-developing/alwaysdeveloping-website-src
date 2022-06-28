@@ -1,7 +1,7 @@
 ---
 title: "nameof usage for better code quality"
 lead: "How the nameof operator can be leveraged to produce cleaner, less error prone code"
-Published: "07/18/2022 01:00:00+0200"
+Published: "07/19/2022 01:00:00+0200"
 slug: "19-nameof-constants"
 draft: false
 toc: true
