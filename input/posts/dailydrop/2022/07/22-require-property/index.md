@@ -161,4 +161,6 @@ I'm looking forward to this feature, and hoping that it is included in C#11. It 
 
 [Nick Chapsas - Why I won’t need constructors anymore in C# 11](https://www.youtube.com/watch?v=9CDgPgWF9IY)   
 
+---
+
 <?# DailyDrop ?>122: 22-07-2022<?#/ DailyDrop ?>

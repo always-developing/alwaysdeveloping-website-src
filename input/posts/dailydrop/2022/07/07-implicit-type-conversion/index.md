@@ -183,4 +183,6 @@ As always, consider your own use case, and which method will work best for that 
 
 [User-defined conversion operators (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators)   
 
+---
+
 <?# DailyDrop ?>112: 07-07-2022<?#/ DailyDrop ?>

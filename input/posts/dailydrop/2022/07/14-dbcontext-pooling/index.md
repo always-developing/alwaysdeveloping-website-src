@@ -121,4 +121,6 @@ Improvements such as the ones shown above in the benchmarks above might not be a
 
 [DbContext pooling](https://docs.microsoft.com/en-us/ef/core/performance/advanced-performance-topics?tabs=with-di%2Cwith-constant#dbcontext-pooling)   
 
+---
+
 <?# DailyDrop ?>116: 14-07-2022<?#/ DailyDrop ?>

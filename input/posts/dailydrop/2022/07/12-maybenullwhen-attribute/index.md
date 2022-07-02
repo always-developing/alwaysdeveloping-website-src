@@ -202,4 +202,6 @@ Whether writing a line of business application or a reusable library, if applica
 
 [Nullable types, dictionaries and magic](https://www.reddit.com/r/csharp/comments/uxlkub/nullable_types_dictionaries_and_magic/)   
 
+---
+
 <?# DailyDrop ?>115: 12-07-2022<?#/ DailyDrop ?>

@@ -120,4 +120,6 @@ In these cases, the `Schema Compare` feature will prove to be invaluable in trac
 
 [How to compare two SQL databases from Visual Studio](https://www.sqlshack.com/how-to-compare-two-sql-databases-from-visual-studio/)   
 
+---
+
 <?# DailyDrop ?>116: 13-07-2022<?#/ DailyDrop ?>

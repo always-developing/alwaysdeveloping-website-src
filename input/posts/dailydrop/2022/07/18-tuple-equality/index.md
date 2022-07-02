@@ -189,4 +189,6 @@ The tuple method can also be used in conjunction with the [techniques already me
 
 [Change your habits: Modern techniques for modern C# - Bill Wagner](https://www.youtube.com/watch?v=aUbXGs7YTGo&t=569s)   
 
+---
+
 <?# DailyDrop ?>118: 18-07-2022<?#/ DailyDrop ?>

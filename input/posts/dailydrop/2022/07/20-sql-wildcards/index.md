@@ -182,4 +182,6 @@ Personally, I've never had any specific need or requirement for any of these wil
 
 [SQL Wildcard Characters](https://www.w3schools.com/sql/sql_wildcards.asp)   
 
+---
+
 <?# DailyDrop ?>120: 20-07-2022<?#/ DailyDrop ?>

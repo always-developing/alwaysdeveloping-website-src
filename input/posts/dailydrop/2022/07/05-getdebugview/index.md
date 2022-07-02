@@ -167,4 +167,6 @@ However the .NET7 enhancements provides a working solution for this, which I loo
 
 [Viewing .NET configuration values](https://dunnhq.com/posts/2022/viewing-configuration-values/)  
 
+---
+
 <?# DailyDrop ?>110: 05-07-2022<?#/ DailyDrop ?>

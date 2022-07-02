@@ -188,4 +188,6 @@ A small, simple technique to incorporate into daily coding, which may not have a
 
 [Reddit CSharp post](https://www.reddit.com/r/csharp/comments/v81c13/can_anyone_tell_me_the_point_of_this_syntax_im/)   
 
+---
+
 <?# DailyDrop ?>119: 19-07-2022<?#/ DailyDrop ?>

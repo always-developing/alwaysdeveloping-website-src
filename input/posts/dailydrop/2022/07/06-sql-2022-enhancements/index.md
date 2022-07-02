@@ -163,4 +163,6 @@ As a C# developer, in recent years, my focus has been more on using Entity Frame
 [DATE_BUCKET (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/date-bucket-transact-sql?view=sql-server-ver16)  
 [JSON_OBJECT (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/json-object-transact-sql?view=sql-server-ver16)  
 
+---
+
 <?# DailyDrop ?>111: 06-07-2022<?#/ DailyDrop ?>
