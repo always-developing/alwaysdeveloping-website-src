@@ -1,7 +1,7 @@
 ---
 title: "IEnumerable's lazy evaluation"
 lead: "Defer execution of IEnumerable returning methods until iteration"
-Published1: "07/26/2022 01:00:00+0200"
+Published: "07/26/2022 01:00:00+0200"
 slug: "26-ienumerable-execution"
 draft: false
 toc: true
@@ -152,4 +152,4 @@ Having the ability to defer execution of the method allows for potentially long 
 
 ---
 
-<?# DailyDrop ?>124: 25-07-2022<?#/ DailyDrop ?>
+<?# DailyDrop ?>124: 26-07-2022<?#/ DailyDrop ?>
