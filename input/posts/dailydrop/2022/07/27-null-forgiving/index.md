@@ -129,7 +129,7 @@ if (IsValid(s))
 
 ## Notes
 
-While not an operator for every day use for most applications, the `null-forgiving` operator can be very useful in resolving certain inaccurate warnings. However take care when using the operator, and only implement when sure that the compiler is incorrect. While the code itself will not throw any exceptions **because** of the operator usage (it's ignored at runtime), the code could throw exceptions due to the the expression in question being `null` - which the compiler was trying to warn about (before being mainually overwritten with the operator)
+While not an operator for every day use for most applications, the `null-forgiving` operator can be very useful in resolving certain inaccurate warnings. However take care when using the operator, and only implement when sure that the compiler is incorrect. While the code itself will not throw any exceptions **because** of the operator usage (it's ignored at runtime), the code could throw exceptions due to the the expression in question being `null` - which the compiler was trying to warn about (before being manually overwritten with the operator)
 
 ---
 
