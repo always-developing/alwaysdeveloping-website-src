@@ -1,7 +1,7 @@
 ---
 title: "Null forgiving operator"
 lead: "Suppressing compiler null reference warnings with the null forgiving operator"
-Published: "07/26/2022 01:00:00+0200"
+Published: "07/27/2022 01:00:00+0200"
 slug: "27-null-forgiving"
 draft: false
 toc: true
