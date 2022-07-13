@@ -1,6 +1,6 @@
 ---
 title: "Windows services with .NET Core"
-lead: Configuring a background service to run as a Windows Service"
+lead: "Configuring a background service to run as a Windows Service"
 Published: "08/05/2022 01:00:00+0200"
 slug: "05-windows-service"
 draft: false
