@@ -1,7 +1,7 @@
 ---
 title: "String null or empty using pattern matching"
 lead: "Leveraging pattern matching instead of string.IsNullOrEmpty - with performance benchmarks!"
-Published1: "08/08/2022 01:00:00+0200"
+Published: "08/08/2022 01:00:00+0200"
 slug: "08-length-pattern-matching"
 draft: false
 toc: true
