@@ -1,7 +1,7 @@
 ---
 title: "Accurate, regular scheduling with PeriodicTimer"
 lead: "Using PeriodicTimer to build an accurate, reliable background service"
-Published1: "08/09/2022 01:00:00+0200"
+Published: "08/09/2022 01:00:00+0200"
 slug: "09-periodic-timer"
 draft: false
 toc: true
