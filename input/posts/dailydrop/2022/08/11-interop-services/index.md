@@ -1,7 +1,7 @@
 ---
 title: "OS information via Runtime.InteropServices"
 lead: "Levering Runtime.InteropServices to execute OS specific functionality"
-Published: "08/10/2022 01:00:00+0200"
+Published: "08/11/2022 01:00:00+0200"
 slug: "11-interop-services"
 draft: false
 toc: true
