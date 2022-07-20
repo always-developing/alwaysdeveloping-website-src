@@ -1,7 +1,7 @@
 ---
 title: "Complex Pattern Matching"
 lead: "Pattern matching can contain IS, NOT, AND and OR keywords for more complex statements"
-Published1: "08/15/2022 01:00:00+0200"
+Published: "08/15/2022 01:00:00+0200"
 slug: "15-pattern-keywords"
 draft: false
 toc: true
