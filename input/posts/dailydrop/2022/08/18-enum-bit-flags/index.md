@@ -1,7 +1,7 @@
 ---
 title: "Combining enum values"
 lead: "Using bit flags to combine enum values to simplify code"
-Published1: "08/18/2022 01:00:00+0200"
+Published: "08/18/2022 01:00:00+0200"
 slug: "18-enum-bit-flags"
 draft: false
 toc: true
