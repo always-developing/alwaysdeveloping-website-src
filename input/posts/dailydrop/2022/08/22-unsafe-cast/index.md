@@ -94,4 +94,10 @@ However, the gain is on the _nanoseconds_ scale, so is not likely to be noticeab
 
 ---
 
+## References
+
+[What is the cost of casting in .NET (C#)?](https://www.tabsoverspaces.com/233888-what-is-the-cost-of-casting-in-net-csharp?utm_source=feed/)   
+
+---
+
 <?# DailyDrop ?>143: 22-08-2022<?#/ DailyDrop ?>
