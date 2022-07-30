@@ -1,7 +1,7 @@
 ---
 title: "Route handler filters in .NET 7"
 lead: "Learning about minimal api route handler filters coming in .NET 7"
-Published: "08/24/2022 01:00:00+0200"
+Published1: "08/24/2022 01:00:00+0200"
 slug: "24-route-filter"
 draft: false
 toc: true
@@ -79,6 +79,10 @@ app.Run();
 ```
 
 On the endpoint definition, the _AddFilter_ method is called, with the `IRouteHandlerFilter` implementation specified. Multiple implementations can be linked together to form a pipeline to the endpoint handler.
+
+<?# InfoBlock ?>
+The above was written using **.NET 7 Preview 5**. AddFilter() has been renamed to _AddRouteHandlerFilter()_ in Preview 6 and will be renamed again to _AddEndpointFilter()_ starting in Preview 7.
+<?#/ InfoBlock ?>
 
 ---
 
