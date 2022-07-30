@@ -1,7 +1,7 @@
 ---
 title: "Route handler filters in .NET 7"
 lead: "Learning about minimal api route handler filters coming in .NET 7"
-Published1: "08/24/2022 01:00:00+0200"
+Published: "08/24/2022 01:00:00+0200"
 slug: "24-route-filter"
 draft: false
 toc: true

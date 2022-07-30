@@ -163,9 +163,9 @@ That's it! (from a code configuration point of view). The application can now be
 
 This post will not go into detail around _how_ to configure the `Windows Service` - but a brief summary:
 
-\- The application needs to be [published](https://docs.microsoft.com/en-us/dotnet/core/extensions/windows-service#publish-the-app)  
-\- A `Windows Service` needs to be created using the `sc.exe` tool. The tool creates the Windows Service and [links it to the exe created in the above step](https://docs.microsoft.com/en-us/dotnet/core/extensions/windows-service#create-the-windows-service)  
-\- Optionally [configure the Windows Service](https://docs.microsoft.com/en-us/dotnet/core/extensions/windows-service#configure-the-windows-service)  
+- The application needs to be [published](https://docs.microsoft.com/en-us/dotnet/core/extensions/windows-service#publish-the-app)  
+- A `Windows Service` needs to be created using the `sc.exe` tool. The tool creates the Windows Service and [links it to the exe created in the above step](https://docs.microsoft.com/en-us/dotnet/core/extensions/windows-service#create-the-windows-service)  
+- Optionally [configure the Windows Service](https://docs.microsoft.com/en-us/dotnet/core/extensions/windows-service#configure-the-windows-service)  
 
 Ideally all of the above steps are done in a CI/CD pipeline, with all the steps automated.
 

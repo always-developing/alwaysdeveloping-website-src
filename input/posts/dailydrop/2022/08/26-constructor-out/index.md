@@ -1,7 +1,7 @@
 ---
 title: "Constructor out parameters"
 lead: "A constructor can contain out and ref parameters"
-Published1: "08/26/2022 01:00:00+0200"
+Published: "08/26/2022 01:00:00+0200"
 slug: "26-constructor-out"
 draft: false
 toc: true

@@ -210,6 +210,20 @@
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+
+        &:focus,
+        &:hover {
+            color: #3399ff;
+        }
+    }
+
+    .badge-light {
+        color: $darkgrey;
+    }
 }
 
 .sticky-top {
