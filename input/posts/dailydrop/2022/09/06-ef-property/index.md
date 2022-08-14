@@ -1,7 +1,7 @@
 ---
 title: "Dynamic EF operations with EF.Property"
 lead: "Using EF.Property to dynamically reference entity properties using a string"
-Published1: "09/06/2022 01:00:00+0200"
+Published: "09/06/2022 01:00:00+0200"
 slug: "06-ef-property"
 draft: false
 toc: true
