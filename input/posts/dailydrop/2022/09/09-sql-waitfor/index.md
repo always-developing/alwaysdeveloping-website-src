@@ -1,165 +1,147 @@
 ---
-title: "Formatting interpolated strings"
-lead: "How interpolated strings can be formatted without using the ToString method"
-Published: "09/09/2022 01:00:00+0200"
+title: "Delay SQL execution with WAITFOR"
+lead: "Using the SQL WAITFOR command to delay the execution of a SQL statement"
+Published1: "09/09/2022 01:00:00+0200"
 slug: "09-sql-waitfor"
 draft: false
 toc: true
 categories:
     - DailyDrop
 tags:
-   - c#
-   - .net
-   - interpolation
-   - formatting
-   - string
+    - sql
+    - sqlserver
+    - waitfor
+    - delay
 
 ---
 
 ## Daily Knowledge Drop
 
-When using `string interpolation`, the colon `:` operator can be used, followed by the `format string` to specify how the string should be formatted. This can be used instead of the `ToString` method with a specified format.
-
-This post is about `interpolated strings` however the technique will also work when using the `index component` (using _String.Format_ with `{0}` instead the string).
-
----
-
-## Format
-
-In a previous post, we learnt how to [align the string when performing string interpolation](../../08/03-string-interpolation-alignment/) - but when using this method (and other composite string techniques) there also an optional _formatString_ component. 
-
-The full syntax for:
-- `string interpolation` is: `{<interpolationExpression>[,<alignment>][:<formatString>]}`
-- `composite formatting` is: `{index[,alignment][:formatString]}`
-
-This post will focus on the _formatString_ portion - this provides a shortcut to using the `.ToString(format)` method on the relevent entity.
+SQL is a `WAITFOR` command which an be used to delay the execution of a proceeding SQL statement. One of two options can be supplied to the `WAITFOR` statement:
+- `TIME`: waits until the  time of day specified before executing the next statement
+- `DELAY`: waits for the time span specified before executing the next statement
 
 ---
 
-## Examples
+## WAITFOR Format
 
-In the examples below, the _ToString_ method, and the _interpolated format string_ method are compared, with the same format string, and shown to produce the same output. It is also shown when no format string is specified, the `general ("G") format specifier is used (for numeric, datetime and enumeration).
+The format and usage of `WAITFOR` is straightforward:
 
-### DateTime
-
-Below we see how to format a `DateTime` using the more traditional _ToString_ method, and then the _format string_ method:
-
-``` csharp
-DateTime current  = DateTime.Now;
-Console.WriteLine($"Current Datetime:{current}");
-Console.WriteLine($"Current Datetime:{current.ToString("MM/dd/yyyy hh:mm:ss.fff")}");
-Console.WriteLine($"Current Datetime:{current:MM/dd/yyyy hh:mm:ss.fff}");
-
-Console.WriteLine($"Current Datetime:{current.ToString("hh:mm")}");
-Console.WriteLine($"Current Datetime:{current:hh:mm}");
+``` sql
+WAITFOR DELAY 'time_to_pass' | TIME 'time_to_execute'
 ```
 
-Executing the above:
+---
+
+## WAITFOR DELAY
+
+`WAITFOR DELAY` will wait the `specified time span` before executing the next command:
+
+``` sql
+PRINT CONVERT(varchar, SYSDATETIME(), 121)
+GO
+
+WAITFOR DELAY '00:00:05';
+GO
+
+PRINT CONVERT(varchar, SYSDATETIME(), 121)
+GO
+```
+
+Executing the above will result in the following output:
 
 ``` terminal
-Current Datetime:2022/08/15 05:56:53
-Current Datetime:09/07/2022 05:54:25.527
-Current Datetime:09/07/2022 05:54:25.527
-Current Datetime:05:54
-Current Datetime:05:54
+2022-09-08 20:39:51.2166773
+2022-09-08 20:39:56.2387040
+
+Completion time: 2022-09-08T20:39:56.2397037+02:00
 ```
 
-Same output with the two methods, but when using the _interpolated format string_ method, the code is more concise and (arguably) cleaner.
+A time span between `00:00:00.001` and `23:59:59.998` can be specified - anything longer will result in an error.
 
 ---
 
-### Guid
+## WAITFOR TIME
 
-A `Guid` example:
+`WAITFOR TIME` will wait until the `specified time of day` before executing the next command:
 
-``` csharp
-Guid newGuid = Guid.NewGuid();
-Console.WriteLine($"Guid value: {newGuid}");
-Console.WriteLine($"Guid value: {newGuid.ToString("B")}");
-Console.WriteLine($"Guid value: {newGuid:B}");
+``` sql
+PRINT CONVERT(varchar, SYSDATETIME(), 121)
+GO
+
+WAITFOR TIME '20:47:00';
+GO
+
+PRINT CONVERT(varchar, SYSDATETIME(), 121)
+GO
 ```
 
-Executing the above:
+Executing the above will result in the following output:
 
 ``` terminal
-Guid value: bcaf5b5e-14be-4156-a480-a87614a900f4
-Guid value: {bcaf5b5e-14be-4156-a480-a87614a900f4}
-Guid value: {bcaf5b5e-14be-4156-a480-a87614a900f4}
+2022-08-15 20:46:48.9212859
+2022-08-15 20:47:00.0130443
+
+Completion time: 2022-08-15T20:47:00.0140433+02:00
 ```
+
+In this example, we only had to wait _12 seconds_, but the wait could be longer depending on the time specified. Only a `time can be specified, not a particular date`. If the next execution of the specified time is the following day, the wait until the time is reached the following day.
 
 ---
 
-### TimeSpan
+## Scheduling
 
-A `TimeSpan` example:
+The below is an _example_ of how the functionality can be used to executing a command on a specific schedule. This technique is used for demo purposes not necessarily recommended for a production use case.
 
-``` csharp
-TimeSpan travelTime = new TimeSpan(1, 6, 24, 1);
-Console.WriteLine($"Travel time: {travelTime}");
-Console.WriteLine($"Travel time: {travelTime.ToString("g")}");
-Console.WriteLine($"Travel time: {travelTime:g}");
+The following will execute the command every second for a full minute, once a day:
+
+``` sql
+-- wait until a specific time
+WAITFOR TIME '20:52:00';
+GO
+
+-- while it is the 53th minute
+WHILE(DATEPART(MINUTE, GETDATE()) < 54)
+BEGIN
+        -- print out the date time
+	BEGIN
+		PRINT CONVERT(varchar, SYSDATETIME(), 121)
+	END
+
+        -- wait for 1 second
+	BEGIN
+		WAITFOR DELAY '00:00:01';
+	END
+END
+GO
 ```
 
-Executing the above:
+The output:
 
-``` terminal
-Travel time: 1.06:24:01
-Travel time: 1:6:24:01
-Travel time: 1:6:24:01
-```
-
----
-
-### Numeric
-
-A `numeric` example:
-
-``` csharp
-int cost = 5699;
-Console.WriteLine($"Cost: {cost}");
-Console.WriteLine($"Cost: {cost.ToString("c")}");
-Console.WriteLine($"Cost: {cost:c}");
-```
-
-Executing the above:
-
-``` terminal
-Cost: 5699
-Cost: R5 699,00
-Cost: R5 699,00
-```
-
----
-
-### Enum
-
-A `Enum` example:
-
-``` csharp
-ConsoleColor drawColor = ConsoleColor.Green;
-Console.WriteLine($"Draw color: {drawColor}");
-Console.WriteLine($"Draw color: {drawColor.ToString("D")}");
-Console.WriteLine($"Draw color: {drawColor:D}");
-```
-
-Executing the above:
-
-``` terminal
-Draw color: Green
-Draw color: 10
-Draw color: 10
+```terminal
+2022-08-15 20:52:00.0145585
+2022-08-15 20:52:01.0162047
+2022-08-15 20:52:02.0209920
+2022-08-15 20:52:03.0229534
+.
+.
+.
+2022-08-15 20:53:56.6402032
+2022-08-15 20:53:57.6424606
+2022-08-15 20:53:58.6450557
+2022-08-15 20:53:59.6499793
 ```
 
 ---
 
 ## Notes
 
-This is `not a new or revolutionary feature`. I tend to use the `ToString` method when formatting strings, not really aware that there was an alternative. Using the `:formatString` method is not going to drastically change the maintainability, readability or performance of the code - but it does require slightly less typing and removes one additional method call (_ToString_) so personally I will be using this method more frequently going forward.
+While not necessarily a command which will see every day usage, it could prove useful to simulate a specific "real world" scenario when there is a time span between statements, either for testing or investigation purposes.
 
 ---
 
 ## References
 
-[Composite formatting: Format string component](https://docs.microsoft.com/en-us/dotnet/standard/base-types/composite-formatting#format-string-component)   
+[SQL WAITFOR Command to Delay SQL Code Execution](https://www.mssqltips.com/sqlservertip/7344/delay-sql-code-execution-with-sql-waitfor/)   
 
 <?# DailyDrop ?>157: 09-09-2022<?#/ DailyDrop ?>
