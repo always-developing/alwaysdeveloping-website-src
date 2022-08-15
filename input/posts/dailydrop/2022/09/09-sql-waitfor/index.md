@@ -1,7 +1,7 @@
 ---
 title: "Formatting interpolated strings"
 lead: "How interpolated strings can be formatted without using the ToString method"
-Published1: "09/09/2022 01:00:00+0200"
+Published: "09/09/2022 01:00:00+0200"
 slug: "09-sql-waitfor"
 draft: false
 toc: true
