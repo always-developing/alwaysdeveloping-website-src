@@ -1,5 +1,5 @@
 ---
-title: "Auto-default struct propety values"
+title: "Auto-default struct property values"
 lead: "Struct properties auto defaulting coming in C# 11"
 Published: "09/14/2022 01:00:00+0200"
 slug: "14-struct-default"
