@@ -1,7 +1,7 @@
 ---
 title: "Application lifetime events with IHostApplicationLifetime"
 lead: "Using IHostApplicationLifetime call back events to handle post-startup and graceful shutdown tasks"
-Published1: "09/16/2022 01:00:00+0200"
+Published: "09/16/2022 01:00:00+0200"
 slug: "16-application-lifetime"
 draft: false
 toc: true
