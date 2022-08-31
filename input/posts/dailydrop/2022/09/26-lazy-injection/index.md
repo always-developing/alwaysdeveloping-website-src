@@ -114,7 +114,7 @@ app.MapGet("/maybe-do-work-lazy", (Lazy<IDatabaseAccess> databaseAccess) =>
 });
 ```
 
-Executing the code and calling the endpoint results in the following (example output):
+Executing the code and calling the endpoint, results in the following (example output):
 
 ``` terminal
 In Lazy<IDatabaseAccess> implementation factory
