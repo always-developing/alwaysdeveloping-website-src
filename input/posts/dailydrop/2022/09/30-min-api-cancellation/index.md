@@ -1,7 +1,7 @@
 ---
 title: "Minimal api's and cancellation tokens"
 lead: "How to cancel aborted api calls with cancellation tokens"
-Published1: "09/30/2022 01:00:00+0200"
+Published: "09/30/2022 01:00:00+0200"
 slug: "30-api-cancellation"
 draft: false
 toc: true
