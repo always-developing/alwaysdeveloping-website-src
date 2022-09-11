@@ -1,7 +1,7 @@
 ---
 title: "Manually passing parameters to a middleware component"
 lead: "Using manually supplied parameters in conjunction with injected parameters"
-Published1: "10/05/2022 01:00:00+0200"
+Published: "10/05/2022 01:00:00+0200"
 slug: "05-middleware-parameter"
 draft: false
 toc: true
