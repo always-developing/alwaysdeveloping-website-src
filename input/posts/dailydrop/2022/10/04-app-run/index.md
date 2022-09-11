@@ -1,7 +1,7 @@
 ---
 title: "Map all urls with IApplicationBuilder.Run"
 lead: "Leveraging the IApplicationBuilder.Run method to map all URLs to an endpoint delegate"
-Published1: "10/04/2022 01:00:00+0200"
+Published: "10/04/2022 01:00:00+0200"
 slug: "04-app-run"
 draft: false
 toc: true
