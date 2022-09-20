@@ -1,7 +1,7 @@
 ---
 title: "Automatic redirect on http status code"
 lead: "Using UseStatusCodePagesWithRedirects to automatically redirect to an error endpoint"
-Published1: "10/10/2022 01:00:00+0200"
+Published: "10/10/2022 01:00:00+0200"
 slug: "10-status-code-pages"
 draft: false
 toc: true
