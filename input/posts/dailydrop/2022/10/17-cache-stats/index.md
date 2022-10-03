@@ -127,4 +127,8 @@ This information is very valuable and can be leveraged to confirm if the cache c
 
 ---
 
+## References
+
+[IMemoryCache.GetCurrentStatistics Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.caching.memory.imemorycache.getcurrentstatistics?view=dotnet-plat-ext-7.0)   
+
 <?# DailyDrop ?>183: 17-10-2022<?#/ DailyDrop ?>

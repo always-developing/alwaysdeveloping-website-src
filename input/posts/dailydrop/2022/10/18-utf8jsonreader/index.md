@@ -198,4 +198,8 @@ If the entire JSON string is not required to be deserialized, consider using `Ut
 
 ---
 
+## References
+
+[Use Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter?pivots=dotnet-6-0#use-utf8jsonreader)   
+
 <?# DailyDrop ?>184: 18-10-2022<?#/ DailyDrop ?>

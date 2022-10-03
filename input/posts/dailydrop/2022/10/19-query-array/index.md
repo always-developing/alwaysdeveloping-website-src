@@ -133,4 +133,8 @@ This approach is significantly simpler and cleaner than having to split the quer
 
 ---
 
+## References
+
+[.NET 7: Microsoft Reveals New ASP.NET Core Features](https://dev.to/bytehide/net-7-microsoft-reveals-new-aspnet-core-features-24f3)  
+
 <?# DailyDrop ?>185: 19-10-2022<?#/ DailyDrop ?>
