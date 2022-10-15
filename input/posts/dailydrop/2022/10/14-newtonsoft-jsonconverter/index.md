@@ -1,5 +1,5 @@
 ---
-title: "Deserializing incomparable types using JsonConverter"
+title: "Deserializing incompatible types using JsonConverter"
 lead: "How to deserialize incompatible types using Newtonsoft.Json and JsonConverter"
 Published: "10/14/2022 01:00:00+0200"
 slug: "14-newtonsoft-jsonconverter"
