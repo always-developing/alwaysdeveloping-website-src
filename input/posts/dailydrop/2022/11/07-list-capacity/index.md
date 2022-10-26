@@ -228,4 +228,4 @@ However setting the capacity to a value too small can be detrimental to performa
 
 [What’s new in C# 11? Dev friendly features](https://tomaszs2.medium.com/c-11-wants-to-be-your-friend-db4a31ed9710)  
 
-<?# DailyDrop ?>195: 04-11-2022<?#/ DailyDrop ?>
+<?# DailyDrop ?>196: 07-11-2022<?#/ DailyDrop ?>
