@@ -168,4 +168,4 @@ While this is a very useful and convenient technique to add the _await_ function
 
 [Cursed C# - Doing shenanigans in C#](https://steven-giesel.com/blogPost/5360d1c3-89f6-4a08-9ee3-6ddbe1b44236)  
 
-<?# DailyDrop ?>199: 010-11-2022<?#/ DailyDrop ?>
+<?# DailyDrop ?>199: 10-11-2022<?#/ DailyDrop ?>
