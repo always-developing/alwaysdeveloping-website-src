@@ -1,7 +1,7 @@
 ---
 title: "List ConvertAll"
 lead: "Converting list data types with ConvertAll"
-Published1: "11/21/2022 01:00:00+0200"
+Published: "11/21/2022 01:00:00+0200"
 slug: "21-list-convertall"
 draft: false
 toc: true
