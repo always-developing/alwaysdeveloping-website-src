@@ -1,7 +1,7 @@
 ---
 title: "Dynamic LINQ with System.Linq.Dynamic.Core"
 lead: "How System.Linq.Dynamic.Core can be used to parse strings in LINQ dynamically"
-Published1: "11/29/2022 01:00:00+0200"
+Published: "11/29/2022 01:00:00+0200"
 slug: "29-dynamic-linq"
 draft: false
 toc: true
