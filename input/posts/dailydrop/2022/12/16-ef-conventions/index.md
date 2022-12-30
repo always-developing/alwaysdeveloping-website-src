@@ -1,7 +1,7 @@
 ---
 title: "Entity Framework conventions"
 lead: "Customizing Entity Framework through the use of conventions"
-Published1: "12/16/2022 01:00:00+0200"
+Published: "12/16/2022 01:00:00+0200"
 slug: "16-ef-conventions"
 draft: false
 toc: true
