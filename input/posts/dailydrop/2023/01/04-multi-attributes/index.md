@@ -1,7 +1,7 @@
 ---
 title: "Combining multiple attributes"
 lead: "Combining multiple attributes into a single line"
-Published1: "01/04/2023 01:00:00+0200"
+Published: "01/04/2023 01:00:00+0200"
 slug: "04-multi-attributes"
 draft: false
 toc: true
