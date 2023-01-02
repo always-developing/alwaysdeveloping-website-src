@@ -143,7 +143,7 @@ That's all there is to it! Entity Framework will now `automatically apply the co
 When interacting with the database using Entity Framework, the `ValueConverter` is automatically used. This includes when creating the table based on the entity schema:
 
 ``` csharp
-var blog = new Blog
+Blog blog = new Blog
 {
     Id = 1,
     Title = "My first post",
@@ -151,7 +151,7 @@ var blog = new Blog
     DateCreated = DateTime.Now,
 };
 
-var context = new DemoContext();
+DemoContext context = new DemoContext();
 context.Database.EnsureCreated();
 await context.Blogs.AddAsync(blog);
 await context.SaveChangesAsync();
