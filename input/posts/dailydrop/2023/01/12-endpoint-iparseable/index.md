@@ -139,4 +139,4 @@ This is a small quality of life feature which makes working with the _IParsable_
 
 [5 new MVC features in .NET 7](https://andrewlock.net/5-new-mvc-features-in-dotnet-7/#1-iparseable-tryparse-for-primitive-binding)  
 
-<?# DailyDrop ?>241: 12-01-2023<?#/ DailyDrop ?>
+<?# DailyDrop ?>233: 12-01-2023<?#/ DailyDrop ?>

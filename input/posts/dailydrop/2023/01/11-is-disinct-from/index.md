@@ -99,4 +99,4 @@ A relatively minor update, but for a developer which writes a good amount SQL th
 
 [Cool Stuff in SQL Server 2022 – IS DISTINCT FROM](https://www.sqlservercentral.com/blogs/cool-stuff-in-sql-server-2022-is-distinct-from)  
 
-<?# DailyDrop ?>240: 11-01-2023<?#/ DailyDrop ?>
+<?# DailyDrop ?>232: 11-01-2023<?#/ DailyDrop ?>

@@ -139,4 +139,4 @@ When simple caching is required, the built-in functionality is an easy to implem
 
 [ASP.NET Core Response Caching](https://ryansouthgate.com/asp.net-core-response-caching/)  
 
-<?# DailyDrop ?>239: 10-01-2023<?#/ DailyDrop ?>
+<?# DailyDrop ?>231: 10-01-2023<?#/ DailyDrop ?>
