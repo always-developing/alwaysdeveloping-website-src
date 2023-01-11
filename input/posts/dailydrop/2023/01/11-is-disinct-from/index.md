@@ -1,7 +1,7 @@
 ---
 title: "SQL: IS DISTINCT FROM"
 lead: "Comparing two expressions with NULL support in SQL"
-Published: "01/10/2023 01:00:00+0200"
+Published: "01/11/2023 01:00:00+0200"
 slug: "11-is-distinct-from"
 draft: false
 toc: true
