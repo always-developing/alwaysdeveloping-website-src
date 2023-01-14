@@ -111,4 +111,4 @@ A simple and easy way to name, and then generate a link using the name. If the c
 
 [Adding Experimental HTTP Methods To ASP.NET Core](https://khalidabuhakmeh.com/adding-experimental-http-methods-to-aspnet-core)  
 
-<?# DailyDrop ?>234: 12-01-2023<?#/ DailyDrop ?>
+<?# DailyDrop ?>234: 13-01-2023<?#/ DailyDrop ?>
