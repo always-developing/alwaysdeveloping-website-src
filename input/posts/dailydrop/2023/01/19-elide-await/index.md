@@ -142,6 +142,6 @@ When _await async_ is used in conjunction with any _exceptions_, the Tasks in qu
 
 ## References
 
-[Elide await keyword - Exceptions](tps://linkdotnet.github.io/tips-and-tricks/async_await/)  
+[Elide await keyword - Exceptions](https://linkdotnet.github.io/tips-and-tricks/async_await/)  
 
 <?# DailyDrop ?>238: 19-01-2023<?#/ DailyDrop ?>
