@@ -1,6 +1,6 @@
 ---
 title: "Task.Delay accuracy"
-lead: "Learning about the accuracy of Task.Delay with small timee frames"
+lead: "Learning about the accuracy of Task.Delay  with small time frames"
 Published: "01/23/2023 01:00:00+0200"
 slug: "23-task-delay"
 draft: false
