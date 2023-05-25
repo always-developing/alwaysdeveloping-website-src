@@ -1,7 +1,7 @@
 ---
 title: "Sharing a common method across classes"
 lead: "Leverage interfaces and extension methods and to share a common method"
-Published: "2023-05-30 03:00:00+0200"
+Published: "2023-05-26 03:00:00+0200"
 slug: "2023-05-interface-extensions"
 draft: false
 toc: true
